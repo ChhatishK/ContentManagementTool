@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Content Management Tool</title>
+    </head>
+    <body>
+        <h1 id="page-heading">Content Management System</h1>
+        <section>
+            <form id="wrapper">
+                <div class="form" enctype="multipart/form-data">
+                    <label for="name">Full name : </label>
+                    <input
+                        id="fullName"
+                        type="text"
+                        placeholder="Enter your full name"
+                        required
+                    />
+                </div>
+                <div class="form">
+                    <label for="email">Email Id : </label>
+                    <input
+                        type="email"
+                        id="email"
+                        maxlength="30"
+                        placeholder="Enter your email address"
+                        required
+                    />
+                </div>
+                <div class="form">
+                    <label for="mobile">Mobile number : </label>
+                    <input
+                        type="tel"
+                        id="mobile-number"
+                        placeholder="Enter mobile number"
+                        maxlength="10"
+                        required
+                    />
+                </div>
+                <div class="form">
+                    <label for="village">Village Name : </label>
+                    <input
+                        id="village"
+                        type="text"
+                        placeholder="Write village name"
+                        required
+                    />
+                </div>
+                <div class="form">
+                    <label for="district">District : </label>
+                    <input
+                        type="text"
+                        id="district"
+                        placeholder="Write your district"
+                        required
+                    />
+                </div>
+                <div class="form">
+                    <label for="code">Pin Code : </label>
+                    <input
+                        id="pin-code"
+                        type="number"
+                        placeholder="Enter Pin code"
+                        required
+                    />
+                </div>
+                <div class="form">
+                    <label for="text">Highest Qualification : </label>
+                    <input
+                        id="qualification"
+                        type="text"
+                        placeholder="Enter your highest qualification"
+                        required
+                    />
+                </div>
+
+                <div class="form">
+                    <label for="text">Experience : </label>
+                    <input
+                        id="Experience"
+                        type="text"
+                        placeholder="Write your experience (in years)"
+                        required
+                    />
+                </div>
+
+                <div class="form">
+                    <label for="text">Activities : </label>
+                    <input
+                        id="activities"
+                        type="text"
+                        placeholder="Write your activities (can be multiple)"
+                    />
+                </div>
+
+                <div class="form">
+                    <label for="file">Upload Profile image : </label>
+                    <input id="image" type="file" accept="image/*" required />
+                </div>
+                <div class="form">
+                    <label for="file">Upload introduction video : </label>
+                    <input
+                        id="video"
+                        type="file"
+                        accept="video/mp4,video/x-m4v,video/*"
+                        required
+                    />
+                </div>
+                <div class="form">
+                    <label for="content"
+                        >Write summary about Your self :
+                    </label>
+                    <textarea
+                        id="about-section"
+                        name="content"
+                        cols="30"
+                        rows="5"
+                        minlength="30"
+                        placeholder="Write about your self"
+                        required
+                    ></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+            <!-- OUTPUT -->
+
+            <h1 id="result-heading" style="display: none">Content Managed</h1>
+            <div id="submitted-content">
+                <!-- Header of the page -->
+                <div class="header">
+                    <!-- Name -->
+                    <h1 id="fullName-display"></h1>
+                    <!-- Email and mobile number -->
+                    <div class="contact-info">
+                        <span id="email-display"></span>
+                        <span id="mob-number-display"></span>
+                    </div>
+                    <!-- Living address -->
+                    <div class="live-address">
+                        <span id="village-display"></span>
+                        <span id="district-display"></span>
+                        <span id="pin-code-display"></span>
+                    </div>
+                </div>
+                <hr />
+                <div class="profile-view">
+                    <img id="image-display" alt="profile-image" />
+                    <!-- <video id="video-display" src="" controls></video> -->
+                </div>
+
+                <!-- Qualification -->
+                <p class="eduction">
+                    <strong>Highest Qualification : </strong>
+                    <span id="qualification-display"></span>
+                </p>
+                <br /><br />
+                <!-- Experiences -->
+                <p class="experi">
+                    <strong>Experiences : </strong>
+                    <span id="experience-display"></span>
+                </p>
+                <br /><br />
+                <!-- Activities -->
+                <p class="activity">
+                    <strong>Activities : </strong>
+                    <span id="activities-display"></span>
+                </p>
+                <br /><br />
+                <!-- About the candidate -->
+                <div id="about-section-display"></div>
+                <div class="Video-view">
+                    <strong>Introduction Video : </strong><br />
+                    <video id="video-display" src="" controls></video>
+                </div>
+            </div>
+        </section>
+        <!-- Script -->
+        <script src="index.js"></script>
+    </body>
+</html>

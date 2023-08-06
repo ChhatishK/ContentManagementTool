@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    background: linear-gradient(
+        45deg,
+        rgb(133, 133, 187),
+        rgb(184, 105, 105),
+        rgb(211, 161, 161),
+        rgb(29, 68, 68)
+    );
+    overflow-x: hidden;
+}
+
+section {
+    margin: 30px;
+}
+#wrapper {
+    width: 700px;
+    margin: 0 auto;
+    box-shadow: 2px 4px 50px rgb(153, 110, 110);
+    padding: 35px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+    background-image: url(title-bg.jpg);
+    background: linear-gradient(
+        to left,
+        rgb(0, 0, 173),
+        rgb(88, 8, 8),
+        rgb(139, 111, 0),
+        rgb(0, 189, 189)
+    );
+    background: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form input {
+    width: 450px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+textarea,
+input[type="file"] {
+    border-radius: 10px;
+    font-size: 20px;
+    padding-inline-start: 10px;
+}
+
+.file {
+    font-size: 20px;
+}
+
+button {
+    width: 120px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(53, 162, 75);
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(9, 107, 29);
+    transition: all 0.5s ease;
+    box-shadow: 2px 4px 25px rgb(241, 128, 128);
+}
+
+/* Output */
+
+#submitted-content {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 750px;
+    /* height: 750px; */
+    background: #fff;
+    box-shadow: 2px 4px 35px #645a5a;
+    border-radius: 10px;
+    display: none;
+    /* visibility: hidden; */
+    /* scale: 0; */
+    padding: 25px;
+}
+.header {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+#header {
+    font-size: 60px;
+    font-weight: 600;
+    background-image: url(title-bg.jpg);
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    white-space: pre-line;
+}
+#fullName-display {
+    white-space: pre-wrap;
+}
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#email-display {
+    font-size: 15px;
+    color: rgb(36, 36, 129);
+    white-space: pre-line;
+}
+
+#mob-number-display {
+    font-size: 15px;
+    white-space: pre-line;
+}
+
+.live-address {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#village-display {
+    white-space: pre-line;
+}
+#district-display {
+    white-space: pre-line;
+}
+#pin-code-display {
+    white-space: pre-line;
+}
+.profile-view {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+}
+
+#image-display {
+    width: 125px;
+    height: 125px;
+    border-radius: 5px;
+}
+
+.Video-view {
+    margin-top: 25px;
+}
+#video-display {
+    width: 80%;
+    border-radius: 8px;
+    text-align: center;
+    height: 20%;
+    margin-left: 90px;
+    margin-top: 25px;
+}
+.eduction {
+    font-size: 20px;
+    font-weight: 600;
+}
+#qualification-display,
+#about-section-display,
+#activities-display,
+#xperience-display {
+    white-space: pre-line;
+}
+.experi {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.activity {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#about-section-display {
+    font-size: 18px;
+    /* line-height: 2px; */
+    text-align: justify;
+}
